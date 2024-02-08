@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/styles.css') }}"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <title>Retrospect-Sad</title>
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('chat') }}">Retrospect</a>
+        <a href="{{ url_for('about') }}">About</a>
+        
+    </div>
+
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+            <source
+          src="{{ url_for('static', filename='videos/namedog.mp4') }}"
+          type="video/mp4"
+        />
+        </video>
+       
+        <audio autoplay loop  id="playAudio">
+            <source
+          src="{{ url_for('static', filename='audios/snowfall.mp3') }}"
+          type="video/mp4"
+        />
+        </audio>
+        <script>
+            window.addEventListener('click', () => {
+                document.getElementById("playAudio").play();
+            });
+        </script>
+        
+        
+        <div class="homepage-container">
+            <div class="content">
+                <h1 id="abttopic">We Hear You!</h1>
+                <h3 id="abttopic">A brief look at how you`ve been through your journal entry from today!</h1><br>
+                <p id="info1">Emotion Detected:Sad/Mehhh</p><br>
+                <p id="info"></p>
+                
+                <br><br>
+                <style>
+                    #info p {
+                        color: black; /* Set paragraph text color to black */
+                    }
+                    #list {
+                        padding-left: 200px; /* Adjust padding for bullet points */
+                    }
+                </style>
+                
+                <div id="info">
+                    <p>If you're going through a challenging day, here are some uplifting and insightful videos that might provide comfort:</p>
+                    <br>
+                    <div id="list">
+                        <li><a href="https://www.youtube.com/watch?v=VvSAmlmzfTI" target="_blank" rel="noopener">Memes to erase your sadness</a> - Enjoy a collection of memes to lighten your mood.</li>
+                        <li><a href="https://www.youtube.com/watch?v=RJgfnc9XEiA" target="_blank" rel="noopener">Cute Dog Memes</a> - Delight in the adorable world of cute dog memes.</li>
+                        <li><a href="https://www.youtube.com/watch?v=hBzP8MtJf04" target="_blank" rel="noopener">A video to watch when you're sad</a> - Find solace and comfort in this video crafted for melancholic moments.</li>
+                        <li><a href="https://www.youtube.com/watch?v=W6-Oou4CZwc" target="_blank" rel="noopener">Sad no more</a> - Discover content that aims to uplift and inspire, turning sadness into joy.</li>
+                        <li><a href="https://www.youtube.com/watch?v=IbACTRSMQwY" target="_blank" rel="noopener">A video to watch when you need a warm hug</a> - Experience the virtual embrace of warmth and kindness through this heartfelt video.</li>
+                    </div><br>
+                    
+                    <p>These videos cover a range of topics, from vulnerability to happiness and resilience, and may offer insights and perspectives to help brighten your day.</p>
+                </div>
+                <br>
+                
+                
+                <p id="info">Click here to chat with our AI assistant-Cappy.You`ll be guaranteed to have a conversation with care</p>
+                <form id="checklist" onsubmit="return redirect()" method="post">
+                                    
+                    <button type="submit"  class="roro" id="recb1">Chat with Cappy?!</button>
+                    
+                </br>
+                    </form>
+
+                    <script>
+                        function redirect() {
+                            var skillsInput = document.getElementById("recb1").value.trim();
+                            
+                            sendChatBtn.addEventListener("click", handleChat);
+                                return false; // Prevent form submission
+                            }
+                        
+                    </script>
+                <br><br>
+                
+                <!-- Photos of the developers -->
+               
+                <style>
+                    /* Add these styles for the developer photos */
+                    .developer-photos {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                    }
+            
+                    .developer-photo {
+                        width: 170px; /* Adjust the width as needed */
+                        height: 170px;
+                        border-radius: 8px; /* Optional: Add rounded corners */
+                    }
+                </style>
+                
+            </div>
+        </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/cappy.css') }}"
+    />
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chat With Our Cappy!</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <img
+                src="{{ url_for('static', filename='images/cappu.jpeg') }}"
+              />
+                <p>Hi there 👋<br>I'm Cappy, Your friendly neighborhood AI.Looks like youre feeling a bit mehhh today.We all have those days.No worries at all,im here for you.Would you like to talk about it?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/cappy.js') }}" defer></script>
+    
+   
+</body>
+
+</html>

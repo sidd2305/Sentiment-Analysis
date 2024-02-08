@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    overflow-y: scroll; 
+}
+#calendar-input {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+/* h1 {
+    color: #1e2c5f;
+    font-weight: bold;
+} */
+#abttopic{
+    top:-10px;
+    color:#080703;
+}
+#maintopic{
+    color:#181817;
+    font-weight:bold;
+    margin-top:-20px;
+}
+#info{
+    
+    color:#ebe8e8;
+    font-weight:540;
+}
+#info1{
+    
+    color:#080808;
+    font-weight:bold;
+    font-size:20px;
+}
+#toppy{
+    color: rgb(249, 244, 246);
+    font-weight:bold;
+}
+#skills-input {
+     /*Adjust the height to make it bigger */
+    
+    /* padding: 40px; Adjust the padding to control the size of the input bar */
+    text-align: left;
+    margin:10px;
+    width:700px;
+    height:200px;
+    padding-left:0;
+    padding-top:0;
+    margin-bottom: 20px; 
+    /*height:400px; */
+    ;
+}
+
+#list{
+    font-size:15px;
+}
+#checklist label[for="skills-input"] {
+    font-weight: bold; /* Make the label for skills-input bold */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Existing styles ... */
+
+#checklist fieldset {
+    /* border: 2px solid #000; 
+    border-radius: 8px; */
+    border:none;
+    padding: 10px;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+#checklist legend {
+    font-weight: bold;
+}
+
+
+#checklist input[type="checkbox"]:checked {
+    border: 2px solid #2b8f2b; /* Dark green border when checkbox is checked */
+    background-color: #8effad; /* Light green background when checkbox is checked */
+}
+
+/* Existing styles ... */
+
+.homepage-container {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.content {
+    
+    position: relative;
+    text-align: center;
+    color: #0b0b0b;
+    z-index: 1;
+    background: rgba(247, 148, 198, 0.4);
+    padding: 35px;
+    box-sizing: border-box;
+    font-size: large;
+    border: 10px solid rgba(235, 29, 118, 0.6);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.homepage-container1{
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh + 340px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    margin-top:0;
+}
+
+.content1 {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    background: rgba(61, 178, 250, 0.5);
+    padding: 20px;
+    font-size: medium;
+    border: 10px solid rgba(4, 9, 69, 0.6);
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom:0px;
+    margin-top:0;
+}
+
+#recb{
+    background-color: rgba(249, 157, 194, 0.8);/* Light green */
+    font-weight:bold;
+    color: #0e0d0d;
+    padding: 12px ; /* Slightly larger padding */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+#recb:hover{
+    background-color: #faf8f9; /* Dark green on hover */
+    transform: scale(1.15); /* Slightly larger size on hover */
+}
+
+#recb1{
+    background-color: rgba(249, 157, 194, 0.8);/* Light green */
+    font-weight:bold;
+    color: #0e0d0d;
+    padding: 12px ; /* Slightly larger padding */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+#recb1:hover{
+    background-color: #faf8f9; /* Dark green on hover */
+    transform: scale(1.15); /* Slightly larger size on hover */
+}
+
+.recommendations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 3;
+   
+}
+
+.course-card {
+    color:#0f0e0e;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #3888d2;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(49, 35, 207, 0.2);
+    transition: height 2s width 2s background-color 0.3s ease-in-out; /* Smooth transition */
+    margin: 10px; 
+    border: 0.95px solid #000;
+    /* New hover effect */
+}
+
+.course-card:hover {
+    background-color: #e82281; /* Change the color to your desired hover color */
+    transform:scale(1.05);
+}
+
+
+/* Add this to your styles.css */
+.navbar {
+    background-color: rgba(221, 121, 154, 0.6);
+    overflow: hidden;
+    padding: 10px;
+    z-index: 3;
+    font-weight: bold;
+   margin-bottom:0px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #100e0e;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #f5f2f4;
+    color: rgb(163, 27, 97);
+}
+
+/* Additional styles for responsiveness */
+
+
+/*chat window css unique*/
+
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with transparency */
+  }
+  
+  .chat-title {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .chat-window {
+    height: 400px; /* Adjust the height as needed */
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: transparent; /* Make the background transparent */
+    
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  #message-input {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+    .course-card {
+        width: 90%;
+    }
+    
+
+}

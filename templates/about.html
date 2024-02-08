@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='styles/styles.css') }}"
+  />
+    <title>How It Works?</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('chat') }}">Retrospect</a>
+        <a href="{{ url_for('about') }}">About</a>
+        
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+            <source
+          src="{{ url_for('static', filename='videos/bg1.mp4') }}"
+          type="video/mp4"
+        />
+        </video>
+    
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+            <source
+          src="{{ url_for('static', filename='videos/bg1.mp4') }}"
+          type="video/mp4"
+        />
+        </video>
+        <div class="homepage-container">
+            <div class="content">
+                <h1 id="abttopic">How it Works?</h1><br><br>
+                <p id="info">The journal sentiment analysis website utilizes the NLTK library to analyze users' journal entries, determining whether they're expressing happiness or sadness. Upon submission, the system offers tailored podcast recommendations aligned with the user's mood, ensuring a personalized listening experience. Complementing this, the site features a chatbot named Cappy, facilitating supportive conversations and providing resources for mental well-being. Additionally, users can track their emotional journey through visualizations, offering insights into their mood fluctuations over time. This integrated approach empowers users to reflect on their emotions, discover relevant content, and receive guidance and support, fostering a proactive approach to emotional wellness.</p>
+                <br><br>
+                <h3>Developed by</h3><br>
+                
+                <!-- Photos of the developers -->
+                <div class="developer-photos">
+                    <figure>
+                        <img
+                src="{{ url_for('static', filename='images/sidd.jpeg') }}"
+                alt="Siddhanth Sridhar"
+                class="developer-photo"
+              />
+                        <figcaption class="developer-caption" font-weight:bold>Siddhanth Sridhar</figcaption>
+                    </figure>
+            
+                    <figure>
+                        <img
+                src="{{ url_for('static', filename='images/shreyac.jpeg') }}"
+                alt="Shreya Chaurasia"
+                class="developer-photo"
+              />
+                        <figcaption class="developer-caption">Shreya Chaurasia</figcaption>
+                    </figure>
+            
+                    <figure>
+                        <img
+                src="{{ url_for('static', filename='images/yashu.jpeg') }}"
+                alt="Yashwanth Reddy"
+                class="developer-photo"
+              />
+                        <figcaption class="developer-caption">Yashwanth Reddy</figcaption>
+                    </figure>
+                </div>
+
+                <style>
+                    /* Add these styles for the developer photos */
+                    .developer-photos {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                    }
+                    
+            
+                    .developer-photo {
+                        width: 150px; /* Adjust the width as needed */
+                        height: 160px;
+                        border-radius: 8px; /* Optional: Add rounded corners */
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+
+</html>
