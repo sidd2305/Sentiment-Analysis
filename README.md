@@ -21,8 +21,4 @@ With intuitive visualizations, users can track their emotional journey, gaining 
 
 
 ## Contribution
-We welcome contributions from the community to enhance our platform. Please refer to the contributing guidelines for more information.
-
-.
-
-🚀 Happy journaling and emotional wellness exploration! 🚀
+We welcome contributions from the community to enhance our platform.🚀 Happy journaling and emotional wellness exploration! 🚀
