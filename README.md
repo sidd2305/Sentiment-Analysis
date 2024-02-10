@@ -10,15 +10,15 @@ But that's not all! Meet Cappy, our friendly chatbot companion powered by OpenAI
 
 With intuitive visualizations, users can track their emotional journey, gaining invaluable insights into mood fluctuations over time. 📊💭 Our integrated approach empowers users to engage with their emotions, discover relevant content, and embark on a proactive journey toward emotional wellness. #EmotionalIntelligence
 
-## Features
+## Features🤩
 - Frontend: HTML, CSS, JavaScript
 - Chatbot: OpenAI integration
 - Linked by Flask
 
-## Special Features
+## Special Features👀
 - For happy journal entries, enjoy cheerful sounds like "chippi chippi chaapa chaapa"
 - For low days, experience soothing sounds like "snowfall"
 
 
-## Contribution
+## Contribution🤝🏻
 We welcome contributions from the community to enhance our platform.🚀 Happy journaling and emotional wellness exploration! 🚀
