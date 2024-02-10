@@ -21,4 +21,9 @@ With intuitive visualizations, users can track their emotional journey, gaining 
 
 
 ## Contribution🤝🏻
+
+- Siddhanth Sridhar(@sidd2305)
+- Shreya Chaurasia(@shreyyasiaa)
+- Yashwanth Reddy(@yashwanth05)
+- 
 We welcome contributions from the community to enhance our platform.🚀 Happy journaling and emotional wellness exploration! 🚀
