@@ -19,24 +19,24 @@ With intuitive visualizations, users can track their emotional journey, gaining 
 - For happy journal entries, enjoy cheerful sounds like "chippi chippi chaapa chaapa"
 - For low days, experience soothing sounds like "snowfall"
 
-## Output Photos
+## Output Photos 📷
 
-### Happy Entry!
+### Happy Entry 😁!
 ![Happy Entry](happybara.jpg)
 ![Happy Page](happypage.jpg)
 ![Cappy Convo](happycappu.jpg)
 ![Cappy Convo](happycappu2.jpg)
 
-### Sad Entry!
+### Sad Entry 😓!
 ![Sad Entry](saddybara.jpg)
 ![Sad Page](sadpage.jpg)
 ![Cappy Convo](sadcappu.jpg)
 ![Cappy Convo](sadcappu2.jpg)
 
-### Retrospect!
+### Retrospect 🤔!
 ![Week in Review](retopage.jpg)
 
-### About Us!
+### About Us 👥!
 ![Week in Review](abt.jpg)
 
 
